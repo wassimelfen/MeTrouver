@@ -5,7 +5,7 @@ const port = 5000;
 const db = {
   database:
     // "mongodb+srv://root:root@kidkod.xmqil.mongodb.net/kidkok?retryWrites=true&w=majority" ||
-    "mongodb://localhost/pfeSyrine",
+    "mongodb://localhost/MeTrouver",
   secret: "mysecret",
 };
 
@@ -22,9 +22,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({ credentials: true, sameSite: true }));
 
-// const user = require("./routers/user");
+const categories = require("./routers/categories");
 
-// app.use("/api/user", user);
+app.use("/api/categories", categories);
 
 app.listen(port, () => {
   console.log(`listening on port http://localhost:${port} !`);

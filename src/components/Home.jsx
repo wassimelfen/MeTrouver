@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home">
       <div className="homeButtons">
         <h1 className="intro-title mb-4">
-          WE HELP YOU TO FIND
+          WE HELP YOU WITH
           <strong>
             <Typed
               className="typedText"
@@ -19,9 +19,11 @@ const Home = () => {
             />
           </strong>
         </h1>
-        <button className="btn-4">
-          <span>Service Provider</span>
-        </button>
+        <Link to="/serviceprovider">
+          <button className="btn-4">
+            <span>Service Provider</span>
+          </button>
+        </Link>
         <Link to="/serviceseeker">
           <button className="btn-4">
             <span>Service Seeker</span>
