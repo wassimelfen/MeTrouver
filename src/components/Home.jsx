@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="mainHome">
       <div className="homeButtons">
         <h1 className="intro-title mb-4">
           WE HELP YOU WITH
